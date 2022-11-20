@@ -6,6 +6,9 @@ export default class ScrollSuave {
     } else {
       this.options = options;
     }
+
+    // bind this ao callback para fazer referência
+    // ao objeto da classe
     this.scrollToSection = this.scrollToSection.bind(this);
   }
 
